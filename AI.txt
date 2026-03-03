@@ -1,0 +1,26 @@
+Generative AI
+AI that can create new content such as text, images, audio, video, or code based on patterns learned from data.
+
+Computer Vision AI (Vision AI)
+AI that enables machines to see, interpret, and understand images and videos, such as recognizing faces or objects.
+
+Natural Language Processing (NLP) AI
+AI that allows computers to understand, process, and generate human language in text or speech form.
+
+Speech AI
+AI that understands spoken language and converts speech to text or text to speech.
+
+Predictive AI
+AI that analyzes historical data to predict future outcomes, such as trends or behaviors.
+
+Recommendation AI
+AI that suggests products, content, or services based on user preferences and behavior.
+
+Robotics AI
+AI that controls robots to perform physical tasks by sensing the environment and making decisions.
+
+Autonomous AI
+AI that can operate independently without human intervention, such as self-driving vehicles.
+aaaaaaaaaaaaaaaaaa
+a
+a

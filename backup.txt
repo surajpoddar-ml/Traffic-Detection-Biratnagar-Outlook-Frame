@@ -1,0 +1,140 @@
+@echo off
+:: 2612734.bat
+:: Batch file to create directories and files based on user inputs
+:: Author: [Suraj Poddar]
+
+:Start
+cls
+echo ================================
+echo    DIRECTORY STRUCTURE MENU
+echo    STUDENT ID:2612734
+echo    Name:Suraj Poddar
+echo ================================
+echo 1. Create root directory
+echo 2. Add subdirectories
+echo 3. Create files
+echo 4. Rename a directory
+echo 5. Show current directory structure
+echo 6. Exit
+echo ================================
+set /p choice=Choose an option (1-6): 
+
+if "%choice%"=="1" goto RootDir
+if "%choice%"=="2" goto SubDir
+if "%choice%"=="3" goto CreateFile
+if "%choice%"=="4" goto RenameDir
+if "%choice%"=="5" goto ShowStructure
+if "%choice%"=="6" exit
+echo Invalid choice! Press any key to continue...
+pause >nul
+goto Start
+
+::-----------------------------
+:RootDir
+set /p rootdir=Enter root directory name: 
+:: Basic error checking
+if "%rootdir%"=="" (
+    echo Name cannot be empty!
+    pause
+    goto Start
+)
+:: Check for invalid characters
+echo %rootdir% | findstr /R /C:"[\/:*?""<>|]" >nul
+if %errorlevel%==0 (
+    echo Invalid characters in directory name!
+    pause
+    goto Start
+)
+:: Create root directory
+mkdir "%rootdir%"
+echo Root directory "%rootdir%" created successfully!
+pause
+goto Start
+
+::-----------------------------
+:SubDir
+set /p rootdir=Enter the root directory to add subdirectories: 
+if not exist "%rootdir%" (
+    echo Root directory does not exist!
+    pause
+    goto Start
+)
+set /p subdir=Enter subdirectory name: 
+if "%subdir%"=="" (
+    echo Name cannot be empty!
+    pause
+    goto Start
+)
+echo %subdir% | findstr /R /C:"[\/:*?""<>|]" >nul
+if %errorlevel%==0 (
+    echo Invalid characters in directory name!
+    pause
+    goto Start
+)
+mkdir "%rootdir%\%subdir%"
+echo Subdirectory "%subdir%" created inside "%rootdir%"!
+pause
+goto Start
+
+::-----------------------------
+:CreateFile
+set /p rootdir=Enter the directory to create file in: 
+if not exist "%rootdir%" (
+    echo Directory does not exist!
+    pause
+    goto Start
+)
+set /p filename=Enter file name (with extension, e.g., test.txt): 
+if "%filename%"=="" (
+    echo File name cannot be empty!
+    pause
+    goto Start
+)
+echo %filename% | findstr /R /C:"[\/:*?""<>|]" >nul
+if %errorlevel%==0 (
+    echo Invalid characters in file name!
+    pause
+    goto Start
+)
+echo This is a sample file > "%rootdir%\%filename%"
+echo File "%filename%" created successfully in "%rootdir%"!
+pause
+goto Start
+
+::-----------------------------
+:RenameDir
+set /p oldname=Enter full path of directory to rename: 
+if not exist "%oldname%" (
+    echo Directory does not exist!
+    pause
+    goto Start
+)
+set /p newname=Enter new directory name: 
+if "%newname%"=="" (
+    echo Name cannot be empty!
+    pause
+    goto Start
+)
+echo %newname% | findstr /R /C:"[\/:*?""<>|]" >nul
+if %errorlevel%==0 (
+    echo Invalid characters in directory name!
+    pause
+    goto Start
+)
+ren "%oldname%" "%newname%"
+echo Directory renamed successfully!
+pause
+goto Start
+
+::-----------------------------
+:ShowStructure
+set /p rootdir=Enter root directory to display structure: 
+if not exist "%rootdir%" (
+    echo Directory does not exist!
+    pause
+    goto Start
+)
+echo Directory structure of "%rootdir%":
+tree "%rootdir%"
+pause
+goto Start
