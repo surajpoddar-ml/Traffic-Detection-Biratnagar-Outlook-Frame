@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatra Sathi - Biratnagar</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BIRATNGAR HIDAU</h1>
+        <nav>
+            <button id="mode-local">Local People</button>
+            <button id="mode-rider">Riders</button>
+            <button id="mode-tourist">Tourists</button>
+            <button id="reset-map">Reset Map</button>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="from-location" placeholder="Your Location">
+        <input type="text" id="to-location" placeholder="Where to Go">
+        <button id="search-route">Search Route</button>
+    </div>
+
+    <main>
+        <div id="map"></div>
+        <div id="info-panel">
+            <h2>Live Updates</h2>
+            <ul id="updates-list">
+                <li>Search a route to start live updates...</li>
+            </ul>
+            <h3>Legend:</h3>
+            <ul>
+                <li>🚦 Traffic</li>
+                <li>⚠️ Accident</li>
+                <li>🚧 Construction</li>
+                <li>💧 Waterlogging</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Yatra Sathi - Biratnagar
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
