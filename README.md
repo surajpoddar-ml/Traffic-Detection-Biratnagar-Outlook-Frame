@@ -1,7 +1,7 @@
 
-# Yatra Sathi - Biratnagar 🗺️
+# BIRATNAGR HIDAU - Biratnagar 🗺️
 
-**Yatra Sathi** is an interactive web-based travel assistant for Biratnagar, designed to help **local people, riders, and tourists** navigate the city efficiently. The platform provides **real-time updates** about traffic, accidents, construction, and waterlogging, along with a **searchable route system** and an intuitive **interactive map**.
+**BIRATNAGR HIDAU** is an interactive web-based travel assistant for Biratnagar, designed to help **local people, riders, and tourists** navigate the city efficiently. The platform provides **real-time updates** about traffic, accidents, construction, and waterlogging, along with a **searchable route system** and an intuitive **interactive map**.
 
 ---
 
@@ -74,15 +74,6 @@ No backend setup is required, as all data is currently simulated for demo purpos
 
 ---
 
-## Screenshots
-
-![Map View](screenshots/map-view.png)
-*Interactive map with live updates.*
-
-![Info Panel](screenshots/info-panel.png)
-*Detailed updates and legend.*
-
----
 
 ## Author
 
