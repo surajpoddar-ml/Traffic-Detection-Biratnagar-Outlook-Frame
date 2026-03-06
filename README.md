@@ -9,16 +9,14 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies](#technologies)
-- [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Author](#author)
 - [License](#license)
 
 ---
 
 ## Overview
-Yatra Sathi focuses on **live city navigation** by visualizing key travel information on an interactive map. Users can:
+Biratnagr Hidau focuses on **live city navigation** by visualizing key travel information on an interactive map. Users can:
 
 - Search routes from their current location to any destination in Biratnagar.
 - View live updates of traffic, accidents, construction zones, and waterlogging.
@@ -48,14 +46,7 @@ The system is built using **Leaflet.js** for mapping, along with HTML, CSS, and 
 
 ---
 
-## Installation
-To run the project locally:
 
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/yatra-sathi-biratnagar.git
-cd yatra-sathi-biratnagar
-````
 
 2. Open `index.html` in your preferred web browser.
 
@@ -96,7 +87,7 @@ No backend setup is required, as all data is currently simulated for demo purpos
 
 - Overview & purpose
 - Features & technologies
-- Installation & usage
+- usage
 - Screenshots section (placeholder links)
 - Author & license
 - Future enhancements  
