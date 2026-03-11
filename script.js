@@ -12,7 +12,7 @@ let accidentLayer = L.layerGroup().addTo(map);
 let constructionLayer = L.layerGroup().addTo(map);
 let waterLayer = L.layerGroup().addTo(map);
 
-// Info panel
+//Info panel
 const updatesList = document.getElementById('updates-list');
 
 // Mode buttons
@@ -106,3 +106,4 @@ document.getElementById('search-route').addEventListener('click', () => {
         addWaterlogUpdate();
     }, 5000);
 });
+
